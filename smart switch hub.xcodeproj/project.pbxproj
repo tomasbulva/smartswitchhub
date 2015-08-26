@@ -9,11 +9,18 @@
 /* Begin PBXBuildFile section */
 		8902F46A1B294345002D6CAA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8902F4691B294345002D6CAA /* AppDelegate.swift */; };
 		8902F46D1B294345002D6CAA /* smart_switch_hub.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8902F46B1B294345002D6CAA /* smart_switch_hub.xcdatamodeld */; };
-		8902F46F1B294345002D6CAA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8902F46E1B294345002D6CAA /* ViewController.swift */; };
 		8902F4721B294345002D6CAA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8902F4701B294345002D6CAA /* Main.storyboard */; };
 		8902F4741B294345002D6CAA /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8902F4731B294345002D6CAA /* Images.xcassets */; };
 		8902F4771B294345002D6CAA /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8902F4751B294345002D6CAA /* LaunchScreen.xib */; };
 		8902F4831B294345002D6CAA /* smart_switch_hubTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8902F4821B294345002D6CAA /* smart_switch_hubTests.swift */; };
+		890829A51B29558000F3E4FF /* SaveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 890829A41B29558000F3E4FF /* SaveViewController.swift */; };
+		8934C8791B4997670098AD08 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8934C8781B4997670098AD08 /* MainViewController.swift */; };
+		897E22FD1B8AC90D00361946 /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 897E22FC1B8AC90D00361946 /* NotificationCenter.framework */; };
+		897E23021B8AC90D00361946 /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 897E23011B8AC90D00361946 /* TodayViewController.swift */; };
+		897E23041B8AC90D00361946 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 897E23031B8AC90D00361946 /* MainInterface.storyboard */; };
+		897E23071B8AC90D00361946 /* smart switch hub widget.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 897E22FB1B8AC90D00361946 /* smart switch hub widget.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		89D561F21B881A6300CDAC1B /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 89D561EA1B881A2200CDAC1B /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		89FAF4F21B2DE8A4004EBB0B /* CellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89FAF4F11B2DE8A4004EBB0B /* CellTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -24,20 +31,95 @@
 			remoteGlobalIDString = 8902F4631B294345002D6CAA;
 			remoteInfo = "smart switch hub";
 		};
+		897E23051B8AC90D00361946 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8902F45C1B294345002D6CAA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 897E22FA1B8AC90D00361946;
+			remoteInfo = "smart switch hub widget";
+		};
+		89D561E91B881A2200CDAC1B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 89D561E21B881A2200CDAC1B /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F8111E3319A95C8B0040E7D1;
+			remoteInfo = "Alamofire iOS";
+		};
+		89D561EB1B881A2200CDAC1B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 89D561E21B881A2200CDAC1B /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4DD67C0B1A5C55C900ED2280;
+			remoteInfo = "Alamofire OSX";
+		};
+		89D561ED1B881A2200CDAC1B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 89D561E21B881A2200CDAC1B /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F8111E3E19A95C8B0040E7D1;
+			remoteInfo = "Alamofire iOS Tests";
+		};
+		89D561EF1B881A2200CDAC1B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 89D561E21B881A2200CDAC1B /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F829C6B21A7A94F100A2CD59;
+			remoteInfo = "Alamofire OSX Tests";
+		};
+		89D561F31B881A6300CDAC1B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 89D561E21B881A2200CDAC1B /* Alamofire.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = F8111E3219A95C8B0040E7D1;
+			remoteInfo = "Alamofire iOS";
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		897E230E1B8AC90D00361946 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				897E23071B8AC90D00361946 /* smart switch hub widget.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		89D561F51B881A6300CDAC1B /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				89D561F21B881A6300CDAC1B /* Alamofire.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		8902F4641B294345002D6CAA /* smart switch hub.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "smart switch hub.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8902F4681B294345002D6CAA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8902F4691B294345002D6CAA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8902F46C1B294345002D6CAA /* smart_switch_hub.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = smart_switch_hub.xcdatamodel; sourceTree = "<group>"; };
-		8902F46E1B294345002D6CAA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		8902F4711B294345002D6CAA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8902F4731B294345002D6CAA /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		8902F4761B294345002D6CAA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		8902F47C1B294345002D6CAA /* smart switch hubTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "smart switch hubTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8902F4811B294345002D6CAA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8902F4821B294345002D6CAA /* smart_switch_hubTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = smart_switch_hubTests.swift; sourceTree = "<group>"; };
+		890829A41B29558000F3E4FF /* SaveViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SaveViewController.swift; sourceTree = "<group>"; };
+		8934C8781B4997670098AD08 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MainViewController.swift; path = ../MainViewController.swift; sourceTree = "<group>"; };
+		897E22FB1B8AC90D00361946 /* smart switch hub widget.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "smart switch hub widget.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		897E22FC1B8AC90D00361946 /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
+		897E23001B8AC90D00361946 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		897E23011B8AC90D00361946 /* TodayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayViewController.swift; sourceTree = "<group>"; };
+		897E23031B8AC90D00361946 /* MainInterface.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MainInterface.storyboard; sourceTree = "<group>"; };
+		89D561E21B881A2200CDAC1B /* Alamofire.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Alamofire.xcodeproj; path = "Alamofire-master/Alamofire.xcodeproj"; sourceTree = "<group>"; };
+		89FAF4F11B2DE8A4004EBB0B /* CellTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CellTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +137,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		897E22F81B8AC90D00361946 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				897E22FD1B8AC90D00361946 /* NotificationCenter.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -63,7 +153,10 @@
 			children = (
 				8902F4661B294345002D6CAA /* smart switch hub */,
 				8902F47F1B294345002D6CAA /* smart switch hubTests */,
+				897E22FE1B8AC90D00361946 /* smart switch hub widget */,
 				8902F4651B294345002D6CAA /* Products */,
+				9DF6911FA44D59A6B17D6A42 /* Frameworks */,
+				89D561E21B881A2200CDAC1B /* Alamofire.xcodeproj */,
 			);
 			sourceTree = "<group>";
 		};
@@ -72,6 +165,7 @@
 			children = (
 				8902F4641B294345002D6CAA /* smart switch hub.app */,
 				8902F47C1B294345002D6CAA /* smart switch hubTests.xctest */,
+				897E22FB1B8AC90D00361946 /* smart switch hub widget.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -79,12 +173,10 @@
 		8902F4661B294345002D6CAA /* smart switch hub */ = {
 			isa = PBXGroup;
 			children = (
-				8902F4691B294345002D6CAA /* AppDelegate.swift */,
-				8902F46E1B294345002D6CAA /* ViewController.swift */,
-				8902F4701B294345002D6CAA /* Main.storyboard */,
+				8934C87B1B4A2F860098AD08 /* controllers */,
+				8934C87A1B4A2F5E0098AD08 /* views */,
+				8934C87C1B4A2F970098AD08 /* model */,
 				8902F4731B294345002D6CAA /* Images.xcassets */,
-				8902F4751B294345002D6CAA /* LaunchScreen.xib */,
-				8902F46B1B294345002D6CAA /* smart_switch_hub.xcdatamodeld */,
 				8902F4671B294345002D6CAA /* Supporting Files */,
 			);
 			path = "smart switch hub";
@@ -115,6 +207,71 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		8934C87A1B4A2F5E0098AD08 /* views */ = {
+			isa = PBXGroup;
+			children = (
+				8902F4751B294345002D6CAA /* LaunchScreen.xib */,
+				8902F4701B294345002D6CAA /* Main.storyboard */,
+			);
+			name = views;
+			sourceTree = "<group>";
+		};
+		8934C87B1B4A2F860098AD08 /* controllers */ = {
+			isa = PBXGroup;
+			children = (
+				8934C8781B4997670098AD08 /* MainViewController.swift */,
+				8902F4691B294345002D6CAA /* AppDelegate.swift */,
+				890829A41B29558000F3E4FF /* SaveViewController.swift */,
+				89FAF4F11B2DE8A4004EBB0B /* CellTableViewCell.swift */,
+			);
+			name = controllers;
+			sourceTree = "<group>";
+		};
+		8934C87C1B4A2F970098AD08 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				8902F46B1B294345002D6CAA /* smart_switch_hub.xcdatamodeld */,
+			);
+			name = model;
+			sourceTree = "<group>";
+		};
+		897E22FE1B8AC90D00361946 /* smart switch hub widget */ = {
+			isa = PBXGroup;
+			children = (
+				897E23011B8AC90D00361946 /* TodayViewController.swift */,
+				897E23031B8AC90D00361946 /* MainInterface.storyboard */,
+				897E22FF1B8AC90D00361946 /* Supporting Files */,
+			);
+			path = "smart switch hub widget";
+			sourceTree = "<group>";
+		};
+		897E22FF1B8AC90D00361946 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				897E23001B8AC90D00361946 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		89D561E31B881A2200CDAC1B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				89D561EA1B881A2200CDAC1B /* Alamofire.framework */,
+				89D561EC1B881A2200CDAC1B /* Alamofire.framework */,
+				89D561EE1B881A2200CDAC1B /* Alamofire iOS Tests.xctest */,
+				89D561F01B881A2200CDAC1B /* Alamofire OSX Tests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9DF6911FA44D59A6B17D6A42 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				897E22FC1B8AC90D00361946 /* NotificationCenter.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -125,10 +282,14 @@
 				8902F4601B294345002D6CAA /* Sources */,
 				8902F4611B294345002D6CAA /* Frameworks */,
 				8902F4621B294345002D6CAA /* Resources */,
+				89D561F51B881A6300CDAC1B /* Embed Frameworks */,
+				897E230E1B8AC90D00361946 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				89D561F41B881A6300CDAC1B /* PBXTargetDependency */,
+				897E23061B8AC90D00361946 /* PBXTargetDependency */,
 			);
 			name = "smart switch hub";
 			productName = "smart switch hub";
@@ -153,6 +314,23 @@
 			productReference = 8902F47C1B294345002D6CAA /* smart switch hubTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		897E22FA1B8AC90D00361946 /* smart switch hub widget */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 897E230D1B8AC90D00361946 /* Build configuration list for PBXNativeTarget "smart switch hub widget" */;
+			buildPhases = (
+				897E22F71B8AC90D00361946 /* Sources */,
+				897E22F81B8AC90D00361946 /* Frameworks */,
+				897E22F91B8AC90D00361946 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "smart switch hub widget";
+			productName = "smart switch hub widget";
+			productReference = 897E22FB1B8AC90D00361946 /* smart switch hub widget.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -164,10 +342,15 @@
 				TargetAttributes = {
 					8902F4631B294345002D6CAA = {
 						CreatedOnToolsVersion = 6.3.2;
+						DevelopmentTeam = 7D8UA76694;
 					};
 					8902F47B1B294345002D6CAA = {
 						CreatedOnToolsVersion = 6.3.2;
 						TestTargetID = 8902F4631B294345002D6CAA;
+					};
+					897E22FA1B8AC90D00361946 = {
+						CreatedOnToolsVersion = 6.4;
+						DevelopmentTeam = 7D8UA76694;
 					};
 				};
 			};
@@ -182,13 +365,51 @@
 			mainGroup = 8902F45B1B294345002D6CAA;
 			productRefGroup = 8902F4651B294345002D6CAA /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 89D561E31B881A2200CDAC1B /* Products */;
+					ProjectRef = 89D561E21B881A2200CDAC1B /* Alamofire.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				8902F4631B294345002D6CAA /* smart switch hub */,
 				8902F47B1B294345002D6CAA /* smart switch hubTests */,
+				897E22FA1B8AC90D00361946 /* smart switch hub widget */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		89D561EA1B881A2200CDAC1B /* Alamofire.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Alamofire.framework;
+			remoteRef = 89D561E91B881A2200CDAC1B /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		89D561EC1B881A2200CDAC1B /* Alamofire.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Alamofire.framework;
+			remoteRef = 89D561EB1B881A2200CDAC1B /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		89D561EE1B881A2200CDAC1B /* Alamofire iOS Tests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "Alamofire iOS Tests.xctest";
+			remoteRef = 89D561ED1B881A2200CDAC1B /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		89D561F01B881A2200CDAC1B /* Alamofire OSX Tests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "Alamofire OSX Tests.xctest";
+			remoteRef = 89D561EF1B881A2200CDAC1B /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		8902F4621B294345002D6CAA /* Resources */ = {
@@ -208,6 +429,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		897E22F91B8AC90D00361946 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				897E23041B8AC90D00361946 /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -215,7 +444,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8902F46F1B294345002D6CAA /* ViewController.swift in Sources */,
+				89FAF4F21B2DE8A4004EBB0B /* CellTableViewCell.swift in Sources */,
+				890829A51B29558000F3E4FF /* SaveViewController.swift in Sources */,
+				8934C8791B4997670098AD08 /* MainViewController.swift in Sources */,
 				8902F46A1B294345002D6CAA /* AppDelegate.swift in Sources */,
 				8902F46D1B294345002D6CAA /* smart_switch_hub.xcdatamodeld in Sources */,
 			);
@@ -229,6 +460,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		897E22F71B8AC90D00361946 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				897E23021B8AC90D00361946 /* TodayViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -236,6 +475,16 @@
 			isa = PBXTargetDependency;
 			target = 8902F4631B294345002D6CAA /* smart switch hub */;
 			targetProxy = 8902F47D1B294345002D6CAA /* PBXContainerItemProxy */;
+		};
+		897E23061B8AC90D00361946 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 897E22FA1B8AC90D00361946 /* smart switch hub widget */;
+			targetProxy = 897E23051B8AC90D00361946 /* PBXContainerItemProxy */;
+		};
+		89D561F41B881A6300CDAC1B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Alamofire iOS";
+			targetProxy = 89D561F31B881A6300CDAC1B /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -346,9 +595,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = "smart switch hub/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -356,9 +611,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = "smart switch hub/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -396,6 +657,36 @@
 			};
 			name = Release;
 		};
+		897E23081B8AC90D00361946 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "smart switch hub widget/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		897E23091B8AC90D00361946 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = "smart switch hub widget/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -415,6 +706,7 @@
 				8902F4881B294345002D6CAA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8902F4891B294345002D6CAA /* Build configuration list for PBXNativeTarget "smart switch hubTests" */ = {
 			isa = XCConfigurationList;
@@ -423,6 +715,16 @@
 				8902F48B1B294345002D6CAA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		897E230D1B8AC90D00361946 /* Build configuration list for PBXNativeTarget "smart switch hub widget" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				897E23081B8AC90D00361946 /* Debug */,
+				897E23091B8AC90D00361946 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
