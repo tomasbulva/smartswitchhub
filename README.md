@@ -7,3 +7,7 @@ tutorial - [http://homedash.org/2014/08/31/kankun-json-cgi-script/](http://homed
 
 
 [![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/tomasbulva/smartswitchhub/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
+
+
+[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/tomasbulva/smartswitchhub/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
+
